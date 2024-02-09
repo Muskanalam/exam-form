@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Form</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        h2 {
+            color: rgb(20, 20, 21);
+            border: 2px solid rgb(19, 101, 52);
+            padding: 10px;
+            text-align: center;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        div {
+            margin: 15px 80px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="number"],
+        input[type="date"],
+        input[type="email"],
+        input[type="tel"],
+        textarea,
+        select {
+            width: 50%;
+            padding: 8px;
+            box-sizing: border-box;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        input[type="checkbox"],
+        input[type="radio"] {
+            margin-right: 5px;
+        }
+
+        select {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            background-color: #f8f8f8;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        .btn {
+            background-color: rgb(228, 164, 15);
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            text-decoration: none;
+            color: #fff;
+            border-radius: 4px;
+            display: inline-block;
+        }
+        #Eligible{
+            display: inline;
+        }
+
+        .btn:hover {
+            background-color: rgb(146, 184, 56);
+        }
+
+        a {
+            text-decoration: none;
+            color: rgb(11, 11, 11);
+        }
+
+        a:active {
+            color: aliceblue;
+        }
+
+        a:hover {
+            color: rgb(103, 232, 94);
+            background-color: aliceblue;
+        }
+
+        #logo {
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <h2 class="bg_red">EXAMS FORM</h2>
+    <form action="backend.php">
+        <div>
+            <label for="my_name">Name</label>
+            <input type="text" name="my_name" id="my_name"/>
+        </div>
+  <!-- Other form elements... -->
+<div>
+    <label for="my_numbers">Enrollment No.:</label>
+    <input type="number" name="my_numbers" id="my_numbers">
+</div>
+
+<div>
+    <label for="my_email">E-mail:</label>
+    <input type="email" name="my_email" id="my_email">
+</div>
+
+<div>
+    <label for="my_contact_number">Contact Number:</label>
+    <input type="tel" name="my_contact_number" id="my_contact_number">
+</div>
+
+<div>
+    <label for="my_boards_marks">Board Marks:</label>
+    <input type="number" name="my_boards_marks" id="my_boards_marks">
+</div>
+
+<div>
+    <label for="my_date">Date:</label>
+    <input type="date" name="my_date" id="my_date">
+</div>
+
+<div>
+    <label for="my_bonus">Credit:</label>
+    <input type="number" name="my_bonus" id="my_bonus">
+</div>
+
+<div>
+    <label id="Eligible" for="my_eligibility">Are You Eligible:</label>
+    <input type="checkbox" name="my_eligibility" id="my_eligibility">
+</div>
+
+<div>
+    <label>Gender:</label>
+    <input type="radio" name="my_gender" value="male">Male
+    <input type="radio" name="my_gender" value="female">Female
+</div>
+
+<div>
+    <label for="Scholarship">Scholarship:</label>
+    <select name="my_scholarship" id="my_scholarship" placeholder="Choose your nationality">
+        <option value="" disabled selected>Select your nationality</option>
+        <option value="indian">Indian</option>
+        <option value="not_indian">Not Indian</option>
+    </select>
+</div>
+
+<div>
+    <label>Document:</label>
+    <input type="radio" name="my_file" value="submitted">Submitted
+    <input type="radio" name="my_file" value="not_submitted">Not Submitted
+</div>
+
+<div>
+    <label for="my_img">Image:</label>
+    <select name="my_img" id="my_img">
+        <option value="uploaded_img">Image Updated Already</option>
+        <option value="not_uploaded_img">Image Uploading</option>
+    </select>
+</div>
+
+<div>
+    <label for="my_text">Write about yourself:</label>
+    <textarea name="my_text" id="my_text" cols="40" rows="10"></textarea>
+</div>
+
+<div>
+    <a href="https://youtube.com" class="btn">Register</a>
+    <a href="https://google.com" class="btn">Login</a>
+</div>
+
+
+</form>
+</body>
+</html>
